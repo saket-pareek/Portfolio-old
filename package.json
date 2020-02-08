@@ -9,6 +9,7 @@
   "author": "saket pareek",
   "license": "ISC",
   "dependencies": {
+    "fullpage.js": "^3.0.8",
     "jquery": "^3.4.1"
   },
   "devDependencies": {
