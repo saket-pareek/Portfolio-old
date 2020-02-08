@@ -19,3 +19,30 @@ body {
 ul {
 	margin: 0;
 }
+
+// .main-container {
+// 	display: grid;
+// 	grid-template-rows: 100px 630px;
+// 	grid-template-columns: 180px 1fr 180px;
+// 	grid-template-areas: 'navigation navigation navigation' 'lt-sidebar main-area rt-sidebar';
+// }
+
+// .navigation {
+// 	background-color: cyan;
+// 	grid-area: navigation;
+// }
+
+// .lt-sidebar {
+// 	background-color: #2e9ea19c;
+// 	grid-area: lt-sidebar;
+// }
+
+// .rt-sidebar {
+// 	background-color: lightpink;
+// 	grid-area: rt-sidebar;
+// }
+
+// .main-area {
+// 	background-color: gray;
+// 	grid-area: main-area;
+// }
