@@ -2,7 +2,7 @@
 /*                                   HEADER                                   */
 /* -------------------------------------------------------------------------- */
 .header {
-	background-color: #e9cccc;
+	background-color: #202020;
 	width: 100%;
 	height: 75rem;
 	padding: 8rem 20rem 0 20rem;
@@ -76,11 +76,10 @@
 		}
 	}
 }
-
 /* -------------------------------------------------------------------------- */
-/*                                   GLAMASH HERO                             */
+/*                                   MAH HERO                                 */
 /* -------------------------------------------------------------------------- */
-.glamash-hero {
+.mah-hero {
 	height: 70rem;
 	width: 100%;
 	margin-top: 20rem;
@@ -147,6 +146,7 @@
 	}
 
 	&__lp {
+		background-color: red;
 		width: 100%;
 		box-shadow: 0px 0px 30px 10px rgba(108, 108, 108, 0.1);
 		display: flex;
@@ -261,7 +261,7 @@
 /* -------------------------------------------------------------------------- */
 /*                                   COLORS                                   */
 /* -------------------------------------------------------------------------- */
-.glamash-colors {
+.mah-colors {
 	padding: 0 20rem 0 20rem;
 	margin-top: 30rem;
 
@@ -292,14 +292,6 @@
 		align-items: flex-end;
 		box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
 
-		// &:not(:last-child) {
-		// 	margin-bottom: 10rem;
-		// }
-
-		// &:not(:nth-child(4)) {
-		// 	margin-right: 10rem;
-		// }
-
 		&:not(:nth-child(n + 5)) {
 			margin-bottom: 10rem;
 		}
@@ -321,47 +313,47 @@
 	}
 
 	&__color-1 {
-		background-color: #ffe1e1;
+		background-color: #010409;
 
 		&__text {
-			background-color: #fff1f1;
-			color: #333;
+			background-color: #2f3133;
+			color: #fff;
 		}
 	}
 
 	&__color-2 {
-		background-color: #333;
+		background-color: #d11818;
 
 		&__text {
-			background-color: #535353;
+			background-color: #d65353;
 			color: #fff;
 		}
 	}
 
 	&__color-3 {
-		background-color: #f4f4f4;
+		background-color: #fbfbfb;
 
 		&__text {
-			background-color: #fdfdfd;
+			background-color: #fff;
 			color: #333;
 		}
 	}
 
 	&__color-4 {
-		background-color: #1c1c1c;
+		background-color: #000000;
 
 		&__text {
-			background-color: #3f3f3f;
+			background-color: #292929;
 			color: #fff;
 		}
 	}
 
 	&__color-5 {
-		background-color: #8e3b3b;
+		background-color: #f5f5f5;
 
 		&__text {
-			background-color: #a85d5d;
-			color: #fff;
+			background-color: #fefefe;
+			color: #333;
 		}
 	}
 }

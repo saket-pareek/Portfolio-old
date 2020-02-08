@@ -1,0 +1,492 @@
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+.header {
+	background-color: #202020;
+	width: 100%;
+	height: 75rem;
+	padding: 8rem 20rem 0 20rem;
+
+	&__navigation {
+		list-style-type: none;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: rgb(224, 224, 224);
+	}
+
+	&__logo-box {
+		width: 20%;
+	}
+
+	&__logo {
+		@include navigation;
+	}
+
+	&__menu-box {
+		width: 80%;
+	}
+
+	&__menu {
+		@include navigation;
+		display: flex;
+		justify-content: flex-end;
+
+		&__link {
+			margin-left: 10rem;
+		}
+	}
+
+	&__heading-box {
+		display: flex;
+		justify-content: flex-start;
+		margin-top: 30rem;
+	}
+
+	&__heading {
+		&__main {
+			@include main-heading;
+		}
+
+		&__sub {
+			@include sub-heading;
+			margin-top: 1.7rem;
+			color: rgb(180, 180, 180);
+		}
+	}
+
+	&__detail-box {
+		width: 20rem;
+		margin: 25rem auto;
+		height: 50rem;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__detail {
+		display: flex;
+		&__heading {
+			@include detail-heading;
+		}
+
+		&__subheading {
+			@include detail-sub;
+			margin-left: 3rem;
+		}
+	}
+}
+/* -------------------------------------------------------------------------- */
+/*                                   CI HERO                                  */
+/* -------------------------------------------------------------------------- */
+.ci-hero {
+	height: 70rem;
+	width: 100%;
+	margin-top: 20rem;
+	position: relative;
+
+	&__bg-box {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__bg {
+		background-color: #f5f5f5;
+		width: 80%;
+		height: 85%;
+	}
+
+	&__fg-box {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 10rem;
+	}
+
+	&__fg {
+		padding: 0 20rem 0 20rem;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	&__detail-box {
+		background-color: #ffffff;
+		height: 55%;
+		width: 18%;
+		padding-left: 4rem;
+		box-shadow: 0px 0px 30px 10px rgba(108, 108, 108, 0.1);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	&__detail {
+		&:not(:last-child) {
+			margin-bottom: 3.5rem;
+		}
+
+		&__heading {
+			@include detail-heading;
+			margin-bottom: 1.5rem;
+		}
+
+		&__subheading {
+			@include detail-sub;
+		}
+	}
+
+	&__lp-box {
+		width: 72%;
+	}
+
+	&__lp {
+		width: 100%;
+		box-shadow: 0px 0px 30px 10px rgba(108, 108, 108, 0.1);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		&__toolbar {
+			height: 20px;
+			width: 100%;
+			background-color: #dcdcdc;
+			display: flex;
+			align-items: center;
+		}
+
+		&__dot {
+			height: 8px;
+			width: 8px;
+			border-radius: 50%;
+			margin-left: 7px;
+
+			&--1 {
+				background-color: #f95555;
+			}
+
+			&--2 {
+				background-color: #e2d81c;
+			}
+
+			&--3 {
+				background-color: #34d638;
+			}
+		}
+
+		&__img {
+			width: 100%;
+		}
+	}
+}
+/* -------------------------------------------------------------------------- */
+/*                                    BRIEF                                   */
+/* -------------------------------------------------------------------------- */
+.brief {
+	width: 60%;
+	margin-top: 40rem;
+	padding: 0 20rem 0 20rem;
+
+	&__heading {
+		@include brief-heading;
+	}
+
+	&__sub {
+		@include brief-sub;
+		font-weight: 500;
+	}
+}
+/* -------------------------------------------------------------------------- */
+/*                                   DEVICE                                   */
+/* -------------------------------------------------------------------------- */
+.device {
+	margin-top: 25rem;
+	padding: 0 0 0 20rem;
+	height: 50rem;
+	width: 100%;
+	position: relative;
+
+	&__bg-box {
+		height: 100%;
+	}
+
+	&__bg {
+		background-color: #d15b5b;
+		height: 75%;
+	}
+
+	&__device-box {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: -12rem;
+		left: 0;
+		padding: 0 2rem 0 14.5rem;
+	}
+
+	&__device {
+		width: 100%;
+		height: 100%;
+		display: flex;
+	}
+
+	&__tab-box {
+		width: 60%;
+		display: flex;
+		justify-content: start;
+		align-items: flex-start;
+	}
+
+	&__tab {
+		height: 62rem;
+	}
+
+	&__phone-box {
+		width: 30%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+
+	&__phone {
+		height: 62rem;
+	}
+}
+/* -------------------------------------------------------------------------- */
+/*                                   COLORS                                   */
+/* -------------------------------------------------------------------------- */
+.ci-colors {
+	padding: 0 20rem 0 20rem;
+	margin-top: 30rem;
+
+	&__text-box {
+		width: 50%;
+	}
+
+	&__heading {
+		@include brief-heading;
+	}
+
+	&__sub {
+		@include brief-sub;
+		font-weight: 500;
+	}
+
+	&__colors-box {
+		margin-top: 7rem;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__color {
+		height: 180px;
+		width: 180px;
+		border-radius: 40px;
+		display: flex;
+		align-items: flex-end;
+		box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+
+		&:not(:nth-child(n + 5)) {
+			margin-bottom: 10rem;
+		}
+
+		&:not(:nth-child(4n + 0)) {
+			margin-right: 12rem;
+		}
+	}
+
+	&__text {
+		height: 50px;
+		width: 180px;
+		border-radius: 0 0 40px 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@include colors-text;
+	}
+
+	&__color-1 {
+		background-color: #d5edef;
+
+		&__text {
+			background-color: #dff3f5;
+			color: #333;
+		}
+	}
+
+	&__color-2 {
+		background-color: #fdde8f;
+
+		&__text {
+			background-color: #ffe7a9;
+			color: #333;
+		}
+	}
+
+	&__color-3 {
+		background-color: #ffa2c9;
+
+		&__text {
+			background-color: #ffbbd7;
+			color: #333;
+		}
+	}
+
+	&__color-4 {
+		background-color: #97c9ec;
+
+		&__text {
+			background-color: #afd1e9;
+			color: #333;
+		}
+	}
+
+	&__color-5 {
+		background-color: #f7f7f7;
+
+		&__text {
+			background-color: #ffffff;
+			color: #333;
+		}
+	}
+
+	&__color-6 {
+		background-color: #dcc8ee;
+
+		&__text {
+			background-color: #e6d2f7;
+			color: #333;
+		}
+	}
+
+	&__color-7 {
+		background-color: #ebe3e0;
+
+		&__text {
+			background-color: #f4e9e5;
+			color: #333;
+		}
+	}
+
+	&__color-8 {
+		background-color: #9cd7d4;
+
+		&__text {
+			background-color: #ade0dd;
+			color: #333;
+		}
+	}
+}
+/* -------------------------------------------------------------------------- */
+/*                                  APPROACH                                  */
+/* -------------------------------------------------------------------------- */
+.approach {
+	width: 70%;
+	margin-top: 30rem;
+	padding: 0 20rem 0 20rem;
+
+	&__heading {
+		@include brief-heading;
+	}
+
+	&__sub {
+		@include brief-sub;
+	}
+}
+/* -------------------------------------------------------------------------- */
+/*                                  FULLPAGE                                  */
+/* -------------------------------------------------------------------------- */
+.fullpage {
+	margin-top: 15rem;
+	padding: 0 20rem 0 20rem;
+	width: 100%;
+	height: 490rem;
+
+	&__fp-box {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		position: relative;
+	}
+
+	&__fp-bg {
+		width: 90%;
+		height: 100%;
+		background-color: #f5f5f5;
+	}
+
+	&__fp {
+		left: 0;
+		top: 10rem;
+		width: 90%;
+		position: absolute;
+		background-color: lightblue;
+		box-shadow: 0px 0px 30px 10px rgba(108, 108, 108, 0.1);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+
+		&__toolbar {
+			height: 25px;
+			width: 100%;
+			background-color: #dcdcdc;
+			display: flex;
+			align-items: center;
+		}
+
+		&__dot {
+			height: 8px;
+			width: 8px;
+			border-radius: 50%;
+			margin-left: 7px;
+
+			&--1 {
+				background-color: #f95555;
+			}
+
+			&--2 {
+				background-color: #e2d81c;
+			}
+
+			&--3 {
+				background-color: #34d638;
+			}
+		}
+
+		&__img {
+			width: 100%;
+		}
+	}
+}
+/* -------------------------------------------------------------------------- */
+/*                                    NEXT                                    */
+/* -------------------------------------------------------------------------- */
+.next {
+	margin-top: 20rem;
+	margin-bottom: 15rem;
+	padding: 0 20rem 0 20rem;
+	width: 100%;
+	height: 50rem;
+
+	&__next-box {
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__text {
+		@include main-heading;
+	}
+}
